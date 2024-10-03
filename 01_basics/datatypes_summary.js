@@ -9,7 +9,7 @@ const Outsidetemp=null
 let userEmail;
 const id=Symbol('123')
 const anotherid=Symbol('123')
-console.log(id===anotherid);
+// console.log(id===anotherid);
 
 const bigNumber=2534624312n
 
@@ -26,8 +26,38 @@ let myObject={
 
 }
 
-const myFunction=function()
-{
-    console.log("hello world");
+// const myFunction=function()
+// {
+//     console.log("hello world");
+// }
+// console.log(typeof bigNumber)
+
+
+
+//+++++++++++++++++ Memory ++++++++++++++//
+//types of memory
+//stack(primitive) ,heap(non-primitive)
+//in stack we get copy but in heap we get the original value or reference value
+
+let myYoutubeName="raj"
+
+let anotherName=myYoutubeName
+anotherName="helloraj"
+
+
+console.log(myYoutubeName);
+
+console.log(anotherName);
+
+
+let user={
+    email:"anbgds@gmail.com",
+    upi:"user@ybl"
+
 }
-console.log(typeof bigNumber)
+
+let useTwo=user
+
+useTwo.email="asasdasfa@gmail.com"
+console.log(user.email)
+console.log(useTwo.email);
